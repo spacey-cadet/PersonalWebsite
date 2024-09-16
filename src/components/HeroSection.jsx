@@ -11,11 +11,7 @@ const HeroSection = () => {
         <div className="content">
           <div className="greeting">Hi There!</div>
           <h1>
-            I am Theo Korir<br />
-            Theo Korir.<br/>
-            Theo <br/>
-            There<br/>
-            There's A Way
+            Need an Online Presence?<br/>
           </h1>
           <p>
            Bring Your Web Ideas to Life - Bring 'em Here
@@ -32,9 +28,6 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="image-container">
-          <div className="ring outer-ring"></div>
-          <div className="ring middle-ring"></div>
-          <div className="ring inner-ring"></div>
           <Image src="/Theo4.svg" alt="Mr Dream With No Exit Door" width={500} height={500} />
         </div>
       </div>
