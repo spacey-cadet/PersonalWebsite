@@ -9,9 +9,9 @@ const HeroSection = () => {
       <Header/>
       <div className="content-container">
         <div className="content">
-          <div className="greeting">Hi There!</div>
+          <div className="greeting">Launch Your Startup Today</div>
           <h1>
-            Need an Online Presence?<br/>
+            Does Your Startup Need An Online Presence?<br/>
           </h1>
           <p>
            Bring Your Web Ideas to Life - Bring 'em Here
@@ -27,6 +27,7 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
+        <Image  src="/rocket.svg" alt="Hire Me To Launch" width={100} height={100} className="rocket"/>
         <div className="image-container">
           <Image src="/Theo4.svg" alt="Mr Dream With No Exit Door" width={500} height={500} />
         </div>

@@ -43,6 +43,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
+  position: relative;
+  left: 5%;
 }
 
 .content {
@@ -55,6 +57,7 @@
   color: #3B82F6;
   padding: 0.5rem 1rem;
   border-radius: 9999px;
+  font-size: 20px;
 }
 
 h1 {
@@ -71,6 +74,8 @@ p {
 .cta-buttons {
   display: flex;
   gap: 1rem;
+  position: relative;
+  top: 3rem;
 }
 
 button {
@@ -89,7 +94,7 @@ button {
 }
 
 .hire-me:hover {
-  background-color: #1E40AF;
+  background-color: #1e40af85;
 }
 
 .view-portfolio {
@@ -112,16 +117,17 @@ button {
   position: relative;
   width: 400px;
   height: 400px;
+  right: 10%;
 }
 
 .image-container img {
   position: relative;
   z-index: 4;
   width: 120%;
-  height: 120%;
+  height: 130%;
   object-fit: cover;
-  left: 5%;
-  top: 10%;
+  left: 3%;
+  top: 21%;
 }
 
 .ring {
@@ -154,4 +160,9 @@ button {
   bottom: -10px;
   background: linear-gradient(145deg, #ff730000, #020711);
   z-index: 3;
+}
+.rocket{
+  position: absolute;
+  bottom: -15%;
+  left: -3%;
 }

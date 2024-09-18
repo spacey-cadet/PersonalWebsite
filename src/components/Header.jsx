@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import "./Header.css"
 
 const Header = () => {
@@ -9,12 +9,29 @@ const Header = () => {
   const handleLinkClick = (link) => {
     setActiveLink(link);
   };
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 5;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
   
   return (
 
-    <header>
-    <nav>
-      <div className="logo">Theo Korir</div>
+    <header className={scrolled ? 'scrolled' : ''}>
+    <nav >
+      <div className="logo">WebStart</div>
       <ul>
         {['home', 'services', 'skills', 'projects', 'testimonials', 'contact'].map((link) => (
           <li key={link}>

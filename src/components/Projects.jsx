@@ -20,18 +20,18 @@ const Projects = () => {
       <div className="projects-container">
         <ProjectCard
           title="HARAMBEESTATS"
-          description="Dynamic Website with all East African Games and Stats: Live, Shedules and Played. "
+          description="Games and Stats For East African Games: Live, Shedules and Played. "
           learnMoreText="harambeestats.com"
         />
         <ProjectCard
           title="GHALABORA"
           description="Modern quality monitoring solution for storage facilities."
-          learnMoreText="ghalabora.thisandthat.com"
+          learnMoreText="ghalabora.chbng.com"
         />
         <ProjectCard
-          title="BLOG WEBSITE: Sunsetatchesly"
-          description="The path may seem unclear. We can help you find your way."
-          learnMoreText="sunsetatchesly.thisandthat.com"
+          title="BENMAPPERS"
+          description="Mapping, surveying, construction and supplies."
+          learnMoreText="benmappers.netlify.com"
         />
       </div>
     </section>

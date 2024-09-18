@@ -28,7 +28,7 @@ header {
   
   nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #252525;
     padding: 0.5rem 0;
     position: relative;
   }
@@ -40,4 +40,13 @@ header {
   
   nav ul li a.active {
    border-bottom: #49281c;
+  }
+
+  .scrolled{
+    position: fixed;
+    top: 0;
+    background-color: #30476dfa;
+    width: 100vw;
+    z-index: 1001;
+    transition: 1s;
   }
