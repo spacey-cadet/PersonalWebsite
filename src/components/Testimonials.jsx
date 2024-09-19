@@ -4,18 +4,15 @@ import "./Testimonials.css"
 
 const Testimonial = () => {
   return (
-    <div className="testimonial-container">
-      <h1>Testimonials</h1>
+    <div className="testimonial-container" id="testimonials">
+      <h2>Testimonials</h2>
       <div className="testimonial-content">
         <blockquote>
-          "I've Been Working With Casey Exclusively Since 2014 And It Has Been Great! He Works Fast And Consistently Delivers High-Quality Work. He Takes My Vision And Translates It Into A <span className="highlight">Professional Design</span> That Functions For My Business Goals. I've Really Appreciated How He's Always Focused On The Function Of The Piece As Well As The <span className="highlight">Visual Design</span>."
+          "I've Been Working With Theo for slighlty over a year And It Has Been Amaizing! He Works Fast And Delivers High-Quality Work. He Takes My Vision And Translates It Into A <span className="highlight">Professional Design</span> He makes my business his business and does his best to use his technical knowledge to achieve my  <span className="highlight">business goals</span>."
         </blockquote>
-        
-          <strong>Mustafa Rahman</strong>
-          <span className="position">— CEO, Toogle</span>
-        
+          <strong>Ben Kemboi</strong>
+          <span className="position"> Founder and GIS Specialist, Ben Mappers Limited</span> 
       </div>
- 
     </div>
   );
 };

@@ -1,0 +1,134 @@
+.services {
+  background: linear-gradient(to bottom right,#334155, #64748b, #8ba5d1);
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  padding-top: 1rem;
+
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.card-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.service-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.star {
+  color: #3b82f6;
+  margin-right: 0.5rem;
+}
+
+.card-pricing {
+  background-color: #30476d9f;
+  padding: 1.5rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.get-started {
+  width: 100%;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started:hover {
+  background-color: #4338ca;
+} 
+
+.night-sky-overlay {
+  position: absolute;
+  top: 90%;
+  left: 0%;
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(to bottom right, rgba(0,0,10,0.6), transparent);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.night-sky-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+      radial-gradient(1px 1px at 20px 30px, white, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 40px 70px, white, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 50px 160px, white, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 90px 40px, white, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 130px 80px, white, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 160px 120px, white, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: twinkle 5s infinite;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
+@media (max-width: 768px) {
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+}

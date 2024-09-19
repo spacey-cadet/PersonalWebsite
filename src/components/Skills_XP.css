@@ -6,13 +6,13 @@
 }
 
 .expertise-title {   
-  font-size: 3.75rem;
   font-weight: bold;
   margin-bottom: 1rem;
   display: flex;
   position: relative;
   left: 5%;
   width: fit-content;
+  color: black
 }
 
 .expertise-subtitle {

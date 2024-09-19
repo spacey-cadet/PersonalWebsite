@@ -1,5 +1,8 @@
 import React from 'react';
 import './Footer.css'
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { CiLinkedin } from "react-icons/ci";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,7 +11,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-left">
-          <span className="footer-name"> Mr Dream With No Exit Door</span>
+          <span className="footer-name"> Web Launch</span>
         </div>
         <nav className="footer-nav">
           <a href="#home">Home</a>
@@ -16,6 +19,21 @@ const Footer = () => {
           <a href="#blog">Blog</a>
           <a href="#contact">Contact</a>
         </nav>
+        <div className="contact-me" id="contact">
+          <p>phone : 0708092390</p>
+          <p>e-mail: theo.korirchbng@gmail.com</p>
+          <div className="socials">
+            <a className="links-socials" href=''>
+              <FaInstagram className="social-icons"/>
+            </a >
+            <a className="links-socials">
+             <FaXTwitter className="social-icons"/>
+            </a>
+            <a className="links-socials">
+              <CiLinkedin className="social-icons"/>
+            </a>
+          </div>
+        </div>
       </div>
       <div className="footer-bottom">
         <span>© {currentYear} Theo Korir. All rights reserved.</span>

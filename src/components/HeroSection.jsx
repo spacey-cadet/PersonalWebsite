@@ -5,7 +5,7 @@ import Image from "next/image"
 
 const HeroSection = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <Header/>
       <div className="content-container">
         <div className="content">
@@ -27,7 +27,7 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <Image  src="/rocket.svg" alt="Hire Me To Launch" width={100} height={100} className="rocket"/>
+        <Image  src="/rocket1.svg" alt="Hire Me To Launch" width={200} height={200} className="rocket"/>
         <div className="image-container">
           <Image src="/Theo4.svg" alt="Mr Dream With No Exit Door" width={500} height={500} />
         </div>

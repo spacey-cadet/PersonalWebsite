@@ -31,9 +31,9 @@ const Header = () => {
 
     <header className={scrolled ? 'scrolled' : ''}>
     <nav >
-      <div className="logo">WebStart</div>
+      <div className="logo">WebLaunch</div>
       <ul>
-        {['home', 'services', 'skills', 'projects', 'testimonials', 'contact'].map((link) => (
+        {['home', 'services', 'projects' ,'testimonials','skills', 'contact'].map((link) => (
           <li key={link}>
             <a 
               href={`#${link}`} 

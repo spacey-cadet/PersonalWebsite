@@ -1,6 +1,6 @@
 .hero {
   background-color: #334155;
-  min-height: 100vh;
+  height: 90vh;
   color: white;
   font-family: Arial, sans-serif;
   position: relative;
@@ -124,10 +124,10 @@ button {
   position: relative;
   z-index: 4;
   width: 120%;
-  height: 130%;
+  height: 140%;
   object-fit: cover;
   left: 3%;
-  top: 21%;
+  top: 25%;
 }
 
 .ring {
@@ -164,5 +164,5 @@ button {
 .rocket{
   position: absolute;
   bottom: -15%;
-  left: -3%;
+  left: -7%;
 }
