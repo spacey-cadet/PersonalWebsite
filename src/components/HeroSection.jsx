@@ -9,13 +9,13 @@ const HeroSection = () => {
       <Header/>
       <div className="content-container">
         <div className="content">
-          <div className="greeting">Launch Your Startup Today</div>
           <h1>
             Does Your Startup Need An Online Presence?<br/>
           </h1>
           <p>
-           Bring Your Web Ideas to Life - Bring 'em Here
+           Bring Your Web Ideas to Life
           </p>
+          <div className="greeting">Launch Your Startup Today</div>
           <div className="cta-buttons">
             <button className="hire-me">
               HIRE ME

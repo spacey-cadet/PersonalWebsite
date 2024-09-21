@@ -19,6 +19,7 @@ const Projects = () => {
   return (
     <section className="projects-section" id="projects">
       <h2>My Portfolio</h2>
+
       <div className="projects-container">
         <ProjectCard
           title="HARAMBEESTATS"
@@ -32,7 +33,7 @@ const Projects = () => {
         />
         <ProjectCard
           title="GHALA BORA"
-          description="Landing Page and Dashboard for an IoT bases monitoring solution for beans under storage "
+          description="Landing Page and Dashboard for an IoT based monitoring solution for beans under storage "
           learnMoreText="ghalabora.chbng.com"
         />
       </div>

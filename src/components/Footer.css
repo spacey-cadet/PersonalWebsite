@@ -31,6 +31,10 @@
   margin: 0;
   padding: .3rem;
 }
+.contacts{
+  display: flex;
+  flex-direction: column;
+}
 .socials{
   display: flex;
   flex-direction: row;
@@ -93,5 +97,16 @@
   }
   .footer-bottom{
     font-size: 0.65em;
+  }
+  .contact me{
+    position: relative;
+    padding: .2rem;
+  }
+  .contact me p{
+    display: inline;
+    font-size: 12px;
+  }
+  .footer-bottom{
+    flex-direction: column;
   }
 }

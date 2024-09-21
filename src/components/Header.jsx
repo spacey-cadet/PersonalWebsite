@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { useState, useEffect } from 'react';
+import { IoMenu } from "react-icons/io5";
 import "./Header.css"
 
 const Header = () => {
@@ -11,6 +12,7 @@ const Header = () => {
   };
 
   const [scrolled, setScrolled] = useState(false);
+  const [showDropdown , setShowdoropdown]= useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,11 +28,15 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [scrolled]);
+
+  function handleHamburgerClick(){
+    setShowdoropdown((prevState)=>!prevState)
+  }
   
   return (
 
     <header className={scrolled ? 'scrolled' : ''}>
-    <nav >
+     <nav >
       <div className="logo">WebLaunch</div>
       <ul>
         {['home', 'services', 'projects' ,'testimonials','skills', 'contact'].map((link) => (
@@ -45,7 +51,26 @@ const Header = () => {
           </li>
         ))}
       </ul>
+      <IoMenu className="hamburger" onClick={handleHamburgerClick}/>
     </nav>
+    {
+        showDropdown && 
+        <div className="dropdown-menu">
+        <ul>
+          {['home', 'services', 'projects' ,'testimonials','skills', 'contact'].map((link) => (
+            <li key={link}>
+              <a 
+                href={`#${link}`} 
+                className={activeLink === link ? 'active' : ''}
+                onClick={() => handleLinkClick(link)}
+              >
+                {link.charAt(0).toUpperCase() + link.slice(1)}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      }  
   </header>
   )
 }

@@ -55,7 +55,7 @@
   display: inline-block;
   background-color: white;
   color: #3B82F6;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3.2rem;
   border-radius: 9999px;
   font-size: 20px;
 }
@@ -130,39 +130,63 @@ button {
   top: 25%;
 }
 
-.ring {
-  position: absolute;
-  border-radius: 50%;
-}
 
-.outer-ring {
-  top: -40px;
-  left: -40px;
-  right: -40px;
-  bottom: -40px;
-  background: linear-gradient(145deg, #ff3c0000, #0084ff);
-  z-index: 1;
-}
-
-.middle-ring {
-  top: -25px;
-  left: -25px;
-  right: -25px;
-  bottom: -25px;
-  background: linear-gradient(145deg, #4fd1c5, #4fd1c5);
-  z-index: 2;
-}
-
-.inner-ring {
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  background: linear-gradient(145deg, #ff730000, #020711);
-  z-index: 3;
-}
 .rocket{
   position: absolute;
   bottom: -15%;
   left: -7%;
+}
+
+@media (max-width: 600px){
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .image-container {
+    display: none;
+  }
+  .rocket{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 200px;
+  }
+  .greeting {
+    padding: 0.5rem 2.1rem;
+    border-radius: 9999px;
+    font-size: 13px;
+    position: relative;
+    top: 2rem;
+  }
+  .content {
+    width: 80%;
+    z-index: 100;
+  }
+  .hero{
+    height: 70vh;
+    overflow: hidden;
+  }
+  button {
+    font-weight: bold;
+    padding: 0.5rem;
+    width: fit-content;
+    font-size: 10px;
+    position: relative;
+    top: 2rem;
+  }
+  h1{
+    width: 300px;
+  }
+  p{
+    display: none;
+  }
+  
+}
+
+
+@keyframes twinkle {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
 }

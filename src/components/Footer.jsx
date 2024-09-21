@@ -16,12 +16,16 @@ const Footer = () => {
         <nav className="footer-nav">
           <a href="#home">Home</a>
           <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#testimonials">Testimonials</a>
           <a href="#blog">Blog</a>
-          <a href="#contact">Contact</a>
         </nav>
         <div className="contact-me" id="contact">
-          <p>phone : 0708092390</p>
-          <p>e-mail: theo.korirchbng@gmail.com</p>
+          <div className="contacts">
+            <p>phone : 0708092390</p>
+            <p>e-mail: theo.korirchbng@gmail.com</p>
+          </div>
+        
           <div className="socials">
             <a className="links-socials" href=''>
               <FaInstagram className="social-icons"/>

@@ -50,3 +50,51 @@ header {
     z-index: 1001;
     transition: 1s;
   }
+  .hamburger{
+    display: none;
+  }
+  .dropdown-menu{
+    display:none;
+  }
+  @media (max-width: 600px) {
+    nav ul{
+      display: none;
+    }
+    .hamburger{
+      display: flex;
+      position: absolute;
+      right: 3%;
+      top: 1%;
+      height: 35px;
+      width: 35px;
+      z-index: 1003;
+    }
+    .dropdown-menu{
+      background-color: #30476dfa;
+      position: absolute;
+      top: 10%;
+      right:10%;
+      padding: 2rem;
+      border-radius: 20px;
+      z-index: 1002;
+    }
+    .dropdown-menu ul{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0;
+      justify-content: flex-start;
+      padding: 0;
+    }
+    .dropdown-menu ul li{
+      list-style: none;
+    }
+    .dropdown-menu ul li a {
+      text-decoration: none;
+      color: #252525;
+      padding: 0.8rem 0;
+      position: relative;
+    }
+    
+    
+  }
