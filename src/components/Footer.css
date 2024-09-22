@@ -27,7 +27,7 @@
   border-radius: 20px;
   padding: 1rem;
 }
-.contact-me p{
+.contact p{
   margin: 0;
   padding: .3rem;
 }
@@ -87,7 +87,7 @@
     display: flex;
     align-items: flex-start;
     padding: 1rem;
-  
+    margin: 0;
   }
   .footer-nav a{
     margin-left: 0;
@@ -98,13 +98,15 @@
   .footer-bottom{
     font-size: 0.65em;
   }
-  .contact me{
+  .contact-me{
     position: relative;
     padding: .2rem;
   }
-  .contact me p{
+  .contacts p{
     display: inline;
-    font-size: 12px;
+    font-size: 13px;
+    padding: .2rem;
+    margin: 0;
   }
   .footer-bottom{
     flex-direction: column;
