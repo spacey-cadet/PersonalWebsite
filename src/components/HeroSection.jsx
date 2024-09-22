@@ -17,14 +17,14 @@ const HeroSection = () => {
           </p>
           <div className="greeting">Launch Your Startup Today</div>
           <div className="cta-buttons">
-            <button className="hire-me">
+            <a className="hire-me" href="#contact">
               HIRE ME
               <span className="arrow-right"></span>
-            </button>
-            <button className="view-portfolio">
-              VIEW PORTFOLIO
+            </a>
+            <a className="view-portfolio" href="#projects">
+               VIEW PORTFOLIO
               <span className="arrow-right"></span>
-            </button>
+            </a>
           </div>
         </div>
         <Image  src="/rocket1.svg" alt="Hire Me To Launch" width={200} height={200} className="rocket"/>

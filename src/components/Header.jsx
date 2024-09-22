@@ -12,7 +12,8 @@ const Header = () => {
   };
 
   const [scrolled, setScrolled] = useState(false);
-  const [showDropdown , setShowdoropdown]= useState(false)
+  const [showDropdown , setShowDropdown]= useState(false)
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,9 +30,13 @@ const Header = () => {
     };
   }, [scrolled]);
 
-  function handleHamburgerClick(){
-    setShowdoropdown((prevState)=>!prevState)
+
+  function handleHamburgerClick() {
+    console.log("Hamburger clicked");
+    setShowDropdown((prevState) => !prevState);
+    console.log(showDropdown)
   }
+ 
   
   return (
 

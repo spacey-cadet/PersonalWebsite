@@ -78,7 +78,7 @@ p {
   top: 3rem;
 }
 
-button {
+.cta-buttons a {
   font-weight: bold;
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
@@ -86,8 +86,8 @@ button {
   align-items: center;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
-
 .hire-me {
   background-color: #4fd1c5;
   color: white;
@@ -165,9 +165,8 @@ button {
   }
   .hero{
     height: 70vh;
-    overflow: hidden;
   }
-  button {
+  .cta-buttons a {
     font-weight: bold;
     padding: 0.5rem;
     width: fit-content;
@@ -178,8 +177,23 @@ button {
   h1{
     width: 300px;
   }
-  p{
+  .content p{
     display: none;
+  }
+  .hero::before {
+    background: radial-gradient(circle, #5eead4 0%, transparent 70%);
+    width: 10px;
+    height: 10px;
+    top: -30px;
+    left: -10px;
+  }
+  
+  .hero::after {
+    background: radial-gradient(circle, #5eead4 0%, transparent 70%);
+    width: 500px;
+    height: 500px;
+    bottom: -250px;
+    right: -200px;
   }
   
 }

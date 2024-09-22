@@ -25,9 +25,9 @@
   flex-direction: column;
   background-color: #30476dfa;
   border-radius: 20px;
-  padding: 1rem;
+  padding: 3rem 3rem;
 }
-.contact p{
+.contacts p{
   margin: 0;
   padding: .3rem;
 }
@@ -78,6 +78,9 @@
   text-decoration: underline;
 }
 @media (max-width: 600px){
+  .footer{
+    padding: 1rem;
+  }
   .footer-content {
     display: flex;
     flex-direction: column;
@@ -100,7 +103,7 @@
   }
   .contact-me{
     position: relative;
-    padding: .2rem;
+    padding: .8rem;
   }
   .contacts p{
     display: inline;

@@ -124,7 +124,7 @@
   .expertise-title,
   .expertise-subtitle {
     left: 6%;
-    width: 100%;
+    width: fit-content;
   }
   .expertise-section{
     padding: 0rem;
