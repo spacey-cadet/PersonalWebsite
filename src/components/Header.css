@@ -77,8 +77,8 @@ header {
       display: flex;
       background-color: #30476dfa;
       position: absolute;
-      top: 10%;
-      right:10%;
+      top: 12%;
+      right:14%;
       padding: 2rem;
       border-radius: 20px;
       z-index: 1002;
@@ -106,5 +106,9 @@ header {
     }
     .scrolled nav{
       padding: 0rem 1rem;
+    }
+    .scrolled .dropdown-menu{
+      top: 105%;
+      right: 15%;
     }
   }
