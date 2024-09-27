@@ -14,6 +14,7 @@ export default function Home() {
       <Projects/>
       <Testimonial/>
       <Skills/>
+      <ContactForm/>
       <Footer/>
     </main>
   )
