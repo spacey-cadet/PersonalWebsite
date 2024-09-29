@@ -50,6 +50,14 @@
 .contact-textarea:focus {
   outline: none;
   border-color: #30476dfa;
+
+}
+.contact-input:focus::placeholder,
+.contact-textarea:focus::placeholder{
+  position: relative;
+  font-size: .5rem;
+  top: -10px;
+  z-index: 10;
 }
 
 .contact-button {
