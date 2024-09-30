@@ -1,5 +1,5 @@
 import React from 'react'
-import "/Launched.css"
+import "./Launched.css"
 
 const Launched = () => {
   return (
