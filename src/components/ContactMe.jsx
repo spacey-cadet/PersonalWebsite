@@ -37,6 +37,7 @@ const ContactForm = () => {
     .catch((error) => {
       console.error('Error:', error);
       alert('An error occurred. Please try again.');
+      setFormData({ name: '', email: '', message: '' });
     });
   }
 
@@ -54,7 +55,7 @@ const ContactForm = () => {
     < section className="contact-container" id="contact-me">
       <div className="contact-card">
         <h2 className="contact-title">Contact me</h2>
-        <form className="contact-form" onSubmit={validateForm}>
+        <form className="contact-form" netlify >
           <div className="input-container">
             <input
               type="text"
