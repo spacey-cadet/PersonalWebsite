@@ -6,6 +6,7 @@ import './ContactMe.css';
 
 const ContactForm = () => {
   const router = useRouter()
+  const host = process.env.HOST || "https://localhost:5173"
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,7 +22,7 @@ const ContactForm = () => {
   };
 
   const sendDataToServer = () => {
-    fetch('/.netlify/functions/contact-me', {
+    fetch(`${host}/.netlify/functions/contact-me`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
