@@ -76,7 +76,7 @@
 .contact-textarea:focus {
   outline: none;
   border-color: #30476dfa;
-  background-color: #8ba5d1;
+  background-color: transparent;
 }
 
 .contact-button {
