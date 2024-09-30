@@ -51,7 +51,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="contact-container">
+    < section className="contact-container" id="contact-me">
       <div className="contact-card">
         <h2 className="contact-title">Contact me</h2>
         <form className="contact-form" onSubmit={validateForm}>
@@ -93,7 +93,7 @@ const ContactForm = () => {
           </button>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 
