@@ -30,6 +30,10 @@
   gap: 1rem;
 }
 
+.input-container {
+  position: relative;
+}
+
 .contact-input,
 .contact-textarea {
   width: 100%;
@@ -43,21 +47,35 @@
 
 .contact-input::placeholder,
 .contact-textarea::placeholder {
+  color: transparent;
+}
+
+.input-label {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  font-size: 1rem;
   color: #c4b5fd;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.contact-input:focus ~ .input-label,
+.contact-textarea:focus ~ .input-label,
+.contact-input:not(:placeholder-shown) ~ .input-label,
+.contact-textarea:not(:placeholder-shown) ~ .input-label {
+  top: -0.5rem;
+  left: 0.5rem;
+  font-size: 0.75rem;
+  color: #8ba5d1;
+  background-color: rgba(18, 30, 63, 0.8);
+  padding: 0 0.25rem;
 }
 
 .contact-input:focus,
 .contact-textarea:focus {
   outline: none;
   border-color: #30476dfa;
-
-}
-.contact-input:focus::placeholder,
-.contact-textarea:focus::placeholder{
-  position: relative;
-  font-size: .5rem;
-  top: -10px;
-  z-index: 10;
 }
 
 .contact-button {
@@ -75,9 +93,9 @@
 .contact-button:hover {
   background-color: #30476dfa;
 }
-@media (max-width: 600px){
-  .contact-title{
+
+@media (max-width: 600px) {
+  .contact-title {
     font-size: 1.5rem;
   }
 }
-  

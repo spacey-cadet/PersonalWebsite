@@ -40,7 +40,6 @@ exports.handler = async (event, context) => {
       text: `Name: ${name}\nMessage: ${message}`
     });
 
-
     return {
       statusCode: 200,
       body: JSON.stringify({ message: "Form submitted successfully" })
