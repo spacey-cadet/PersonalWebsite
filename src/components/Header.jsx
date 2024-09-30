@@ -32,9 +32,7 @@ const Header = () => {
 
 
   function handleHamburgerClick() {
-    console.log("Hamburger clicked");
     setShowDropdown((prevState) => !prevState);
-    console.log(showDropdown)
   }
  
   
