@@ -21,7 +21,7 @@ const ContactForm = () => {
     }));
   };
   const sendDataToServer = () => {
-    fetch(`${host}/.netlify/functions/contact-me`, {
+    fetch(`https://chbng.com/.netlify/functions/contact-me`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
