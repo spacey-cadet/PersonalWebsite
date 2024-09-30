@@ -55,7 +55,7 @@ const ContactForm = () => {
     < section className="contact-container" id="contact-me">
       <div className="contact-card">
         <h2 className="contact-title">Contact me</h2>
-        <form className="contact-form" netlify >
+        <form className="contact-form" name="contact"netlify >
           <div className="input-container">
             <input
               type="text"
