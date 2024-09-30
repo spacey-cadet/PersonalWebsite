@@ -6,7 +6,6 @@ import './ContactMe.css';
 
 const ContactForm = () => {
   const router = useRouter()
-  const host = process.env.HOST
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -55,7 +54,7 @@ const ContactForm = () => {
     < section className="contact-container" id="contact-me">
       <div className="contact-card">
         <h2 className="contact-title">Contact me</h2>
-        <form className="contact-form" name="contact"netlify >
+        <form className="contact-form" name="contact" onSubmit={validateForm} >
           <div className="input-container">
             <input
               type="text"
