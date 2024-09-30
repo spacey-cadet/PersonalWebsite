@@ -10,7 +10,9 @@ const HeroSection = () => {
       <div className="content-container">
         <div className="content">
           <h1>
-            Reach your clients using high converting websites<br/>
+            Reach your clients <br/>
+            through <br/>
+            high converting websites<br/>
           </h1>
           <p>
            Your business to the world
