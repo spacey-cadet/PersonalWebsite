@@ -45,9 +45,8 @@ const pricingOptions = [
 
   return (
     <section className="services" id="services">
-      <div class="night-sky-overlay"></div>
       <div className="container">
-        <h2>My tailor-made web solutions</h2>
+        <h2>Custom web solutions</h2>
         <div className="pricing-cards">
           {pricingOptions.map((option, index) => (
             <div key={index} className="card">
@@ -64,7 +63,7 @@ const pricingOptions = [
               </div>
               <div className="card-pricing">
                 <div className="price">{option.price}</div>
-                <button className="get-started">Get Started</button>
+                <a className="get-started" href="#contact-me">Get Started</a>
               </div>
             </div>
           ))}

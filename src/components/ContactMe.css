@@ -9,7 +9,7 @@
 .contact-card {
   width: 100%;
   max-width: 400px;
-  background-color: rgba(18, 30, 63, 0.3);
+  background-color: #f6f9fc;
   backdrop-filter: blur(10px);
   border: 1px solid #252525;
   border-radius: 0.5rem;
@@ -20,7 +20,7 @@
 .contact-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: white;
+  color: black;
   margin-bottom: 1.5rem;
 }
 
@@ -37,7 +37,7 @@
 .contact-input,
 .contact-textarea {
   width: 100%;
-  background-color: rgba(29, 85, 149, 0.5);
+  background-color: #f6f9fc;
   color: white;
   border: 1px solid #0d0d0e;
   border-radius: 0.375rem;
@@ -55,7 +55,7 @@
   left: 0.75rem;
   top: 0.75rem;
   font-size: 1rem;
-  color: #c4b5fd;
+  color: #000000;
   transition: all 0.3s ease;
   pointer-events: none;
 }
@@ -67,21 +67,21 @@
   top: -0.5rem;
   left: 0.5rem;
   font-size: 0.75rem;
-  color: #8ba5d1;
-  background-color: transparent;
+  color: #050505;
+  background-color: #f6f9fc;
   padding: 0 0.25rem;
 }
 
 .contact-input:focus,
 .contact-textarea:focus {
   outline: none;
-  border-color: #30476dfa;
-  background-color: rgba(29, 85, 149, 0.5);
+  border-color: #171818fa;
+  background-color: #f6f9fc;
 }
 
 .contact-button {
   width: 100%;
-  background-color: #8ba5d1;
+  background-color: rgba(48, 71, 109);
   color: white;
   font-weight: bold;
   padding: 0.75rem;
